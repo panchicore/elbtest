@@ -9,7 +9,8 @@ from django.conf import settings
 
 environments = {
     'production': {
-        'hosts': ['ubuntu@ec2-54-242-4-78.compute-1.amazonaws.com:22'],
+        'hosts': ['ubuntu@ec2-54-242-4-78.compute-1.amazonaws.com:22',
+                  'ubuntu@ec2-54-235-42-94.compute-1.amazonaws.com:22'],
         'source_code': '/home/ubuntu/www/elbtest',
         'supervisor_commands': [
             'supervisorctl restart elbtest',

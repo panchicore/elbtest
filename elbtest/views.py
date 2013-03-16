@@ -8,3 +8,8 @@ def home(request):
 
 def ping(request):
     return HttpResponse('200')
+
+
+def pong(request):
+    return HttpResponse('pong')
+

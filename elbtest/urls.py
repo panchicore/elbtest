@@ -8,6 +8,7 @@ urlpatterns = patterns('',
     # Examples:
     url(r'^$', 'elbtest.views.home', name='home'),
     url(r'^ping/$', 'elbtest.views.ping', name='ping'),
+    url(r'^pong/$', 'elbtest.views.pong', name='pong'),
     # url(r'^elbtest/', include('elbtest.foo.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:
