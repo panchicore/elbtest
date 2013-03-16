@@ -11,7 +11,7 @@ def ping(request):
 
 
 def pong(request):
-    for a in range(1, 9000):
+    for a in range(1, 3000):
         primes(randint(0, 9999))
         a.__sizeof__()
     return HttpResponse(primes(randint(1, 10)))
