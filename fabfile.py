@@ -10,13 +10,12 @@ from django.conf import settings
 environments = {
     'production': {
         'hosts': ['ubuntu@ec2-54-242-4-78.compute-1.amazonaws.com:22'],
-        'source_code': '/home/ubuntu/www/segurosdigitales.com/segurosdigitales',
+        'source_code': '/home/ubuntu/www/elbtest',
         'supervisor_commands': [
-            'supervisorctl restart celery-segurosdigitales.com',
-            'supervisorctl restart segurosdigitales.com',
+            'supervisorctl restart elbtest',
         ],
         'virtualenv': {
-            'virtualenv_name': 'segurosdigitales.com',
+            'virtualenv_name': 'elbtest',
             'virtualenv_sh': '/usr/local/bin/virtualenvwrapper.sh',
         },
         'git': {
